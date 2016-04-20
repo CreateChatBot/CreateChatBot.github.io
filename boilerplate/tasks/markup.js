@@ -10,7 +10,7 @@ import config from '../config';
 
 export function markup(done, all) {
 
-  return gulp.src(`${config.src}/*.html`, {
+  return gulp.src(`${config.src}/*.html` {
       base: config.src
     })
     // .pipe(all ? gutil.noop() : newer(config.dist))
