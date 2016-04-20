@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 
 import browserSync from 'browser-sync';
-
 import config from '../config';
 
 export function serve(done) {
@@ -11,7 +10,7 @@ export function serve(done) {
   browserSync.init({
     server: {
       baseDir: config.dist,
-      directory: true
+      index: "index.html"
     },
     port: config.port,
     logConnections: true,

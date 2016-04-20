@@ -1,0 +1,28 @@
+/*
+|----------------------------------------------------------------------------
+| SIDEBAR
+|----------------------------------------------------------------------------
+*/
+.categories {
+	li {
+		border-left: 1px solid #efefef;
+		border-top: 1px solid #efefef;
+
+		&:last-child {
+			border-bottom: 1px solid #efefef;
+		}
+
+		a {
+			color: $body-text;
+			padding: 15px;
+			display: block;
+		}
+
+		&:hover {
+			a {
+				background-color: #efefef;
+				color: $base-color;
+			}
+		}
+	}
+}

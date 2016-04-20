@@ -12,18 +12,6 @@
   "issues": {
     "url": "https://github.com/dmnsgn/gulp-frontend-boilerplate/issues"
   },
-  "keywords": [
-    "gulp",
-    "gulp4",
-    "es6",
-    "es2015",
-    "boilerplate",
-    "frontend",
-    "tasks",
-    "workflow",
-    "preprocessor",
-    "framework"
-  ],
   "license": "MIT",
   "vendors": [
     "./node_modules/greensock/src/uncompressed/TweenMax.js"
@@ -62,6 +50,8 @@
     "gulp-preprocess": "^2.0.x",
     "gulp-rename": "^1.2.x",
     "gulp-sitemap": "^2.2.x",
+    "gulp-sass": "^2.2.x",
+    "gulp-sass-glob": "^1.0.6", 
     "gulp-sourcemaps": "^1.6.x",
     "gulp-uglify": "^1.5.x",
     "gulp-util": "^3.0.x",
@@ -127,6 +117,6 @@
   },
   "extensions": {
     "scripts": "js",
-    "styles": "css"
+    "styles": "scss"
   }
 }

@@ -1,0 +1,100 @@
+/*
+|----------------------------------------------------------------------------
+| 7. TESTIMONIAL
+|----------------------------------------------------------------------------
+*/
+.testimonial {
+
+	&.image-bg {
+		background: url(../images/testimonial.jpg) no-repeat center center;
+	}
+
+	cite {
+		display: block;
+		font-style: normal;
+		font-size: 1.154rem;
+		line-height: 2;
+	}
+
+	.person {
+		margin-bottom: 0;
+
+		span {
+			display: block;
+			line-height: 1.6;
+		}
+	}
+
+	.name {
+		font-size: 12px;
+	}
+
+	.company {
+		font-size: 10px;
+	}
+}
+
+.testimonial-potraits {
+	list-style-type: none;
+	padding: 0;
+
+	.item {
+		display: inline-block;
+		width: 60px;
+		margin: 0 7px;
+		position: relative;
+		cursor: pointer;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@include radius(7px);
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+
+		&.active:before {
+			background-color: transparent;
+		}
+	}
+
+	img {
+		width: 100%;
+		@include radius(7px);
+		background-color: #fff;
+		padding: 3px;
+
+
+	}
+}
+
+.testimonial-contents {
+	position: relative;
+
+	.owl-prev,
+	.owl-next {
+		position: absolute;
+		top: 50px;
+		background-color: rgba(255, 255, 255, 0.35);
+		@include radius(5px);
+		width: 40px;
+		height: 40px;
+		line-height: 35px;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $base-color;
+		}
+	}
+
+	.owl-prev {
+		left: 0;
+	}
+
+	.owl-next {
+		right: 0;
+	}
+}

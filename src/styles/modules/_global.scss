@@ -1,0 +1,423 @@
+/*
+|----------------------------------------------------------------------------
+| CSS FILE STRUCTURE
+|----------------------------------------------------------------------------
+
+1. GLOBAL STYLES
+	1. BUTTONS
+	2. ICONOGRAPHY
+	3. SECTION SPECIFIC
+	4. MISC
+	5. HELPER CLASS
+
+2. NAVBAR
+	1. NAVBAR STYLE - FIXED TOP
+	2. NAVBAR STYLE - LEFT
+
+3. HOME
+4. APP DESCRIPTION
+5. VIDEO
+6. FEATURES
+7. TESTIMONIAL
+8. SCREENSHOTS
+9. BLOGS
+	1. RECENT BLOGS
+	2. CAROUSEL CONTROLS
+	3. VIDEO POST
+	4. SLIDE SHOW POST
+	5. SINGLE BLOG POSTS
+		1. COMMENT AREA
+		2. COMMENT FORM
+
+10. PRICING TABLE
+11. SUBSCRIBE
+12. DOWNLOAD
+13. CONTACT US
+
+*/
+
+
+
+/*
+|----------------------------------------------------------------------------
+| 1. GLOBAL STYLES
+|----------------------------------------------------------------------------
+*/
+html, body {
+	font-size: 13px;
+	color: $body-text;
+	font-family: "Open Sans", sans-serif;
+	background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.25;
+}
+
+h1 {
+	font-size: 4.5rem;
+}
+
+h5 {
+	font-size: 1.15rem;
+}
+
+p {
+	line-height: 1.8;
+}
+
+a {
+	color: $base-color;
+	transition: all 0.3s;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+blockquote {
+	border: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+/******************** 1.1 BUTTONS ********************/
+.btn {
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+
+.btn-base {
+	background-color: $base-color;
+	color: #fff !important;
+	border: 1px solid $base-color;
+
+	&:hover {
+		background-color: darken($base-color, 10%);
+		border-color: darken($base-color, 10%);
+	}
+}
+
+.btn-trans {
+	background-color: transparent;
+	border: 1px solid $base-color;
+
+	&:hover {
+		background-color: $base-color;
+		color: #fff;
+	}
+}
+
+.btn-md {
+	font-size: 1.3rem;
+	padding: 12px 22px;
+}
+
+.btn-lg {
+	font-size: 1.85rem;
+	padding: 18px;
+	font-weight: 600;
+	min-width: 200px;
+
+	[class^="icon-"],
+	[class*="icon-"] {
+		width: 25px;
+		margin-right: 10px;
+		margin-top: 3px;
+		vertical-align: top;
+	}
+}
+
+.btn-rounded {
+	@include radius(15px);
+}
+
+.buttons-group {
+	.btn {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+/******************** ICONOGRAPHY ********************/
+[class^="icon-"],
+[class*="icon-"] {
+	vertical-align: middle;
+	height: auto;
+	transition: all 0.3s;
+	width: 20px;
+}
+
+.outer-shape {
+	position: relative;
+	width: 70px;
+
+	.rectangle {
+		position: relative;
+		width: 100%;
+		height: auto;
+		fill: transparent;
+		stroke-width: 1px;
+		stroke: $base-color;
+		transition: all 0.3s;
+	}
+
+	[class^="icon-"],
+	[class*="icon-"] {
+		position: absolute;
+		left: "calc(50% - 20px)";
+		top: "calc(50% - 12px)";
+		fill: $base-color;
+		transition: all 0.3s;
+	}
+
+	&.right {
+		.rectangle {
+			transform: rotateY(180deg);
+		}
+
+		[class^="icon-"],
+		[class*="icon-"] {
+			left: auto;
+			right: "calc(50% - 20px)";
+		}
+	}
+
+	&.big {
+		width: 100px;
+
+		[class^="icon-"],
+		[class*="icon-"] {
+			width: 25px;
+			left: "calc(50% - 25px)";
+			top: "calc(50% - 15px)";
+		}
+
+		&.right {
+			[class^="icon-"],
+			[class*="icon-"] {
+				left: auto;
+				right: "calc(50% - 25px)";
+			}
+		}
+	}
+}
+
+.media {
+	&:hover {
+		.outer-shape {
+			.rectangle {
+				fill: $base-color;
+			}
+			[class^="icon-"],
+			[class*="icon-"] {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+
+
+/******************** 1.3 SECTION SPECIFIC ********************/
+.white-bg {
+	background-color: #fff;
+	color: $body-text-alt;
+}
+
+.off-white {
+	background-color: #f9f9f9;
+}
+
+.overlay {
+	position: relative;
+	color: #fff;
+	@include overlay_f;
+
+	.section-title {
+		color: #fff;
+	}
+
+	.section-title-2:before,
+	.section-title-2:after {
+		border-color: #fff;
+	}
+
+	.btn-trans {
+		border: 1px solid #fff;
+		color: #fff;
+
+		&:hover {
+			background-color: $base-color;
+			border-color: $base-color;
+		}
+	}
+
+	[class^="icon-"],
+	[class*="icon-"] {
+		fill: #fff;
+	}
+}
+
+.section-title {
+	margin-top: 0;
+	color: #313131;
+}
+
+.section-sub-title {
+	font-size: 1.15rem;
+	line-height: 2;
+	margin-bottom: 0;
+}
+
+.section-heading {
+	margin-bottom: 80px;
+}
+
+.section-title-1 {
+	+ .section-sub-title {
+		margin-top: 30px;
+	}
+}
+
+.section-title-2 {
+	display: inline-block;
+	position: relative;
+
+	&:before,
+	&:after {
+		content: "";
+		border-top: 2px solid $body-text;
+		width: 100px;
+		position: absolute;
+		top: 21px;
+	}
+
+	&:before {
+		left: -130px;
+	}
+
+	&:after {
+		right: -130px;
+	}
+
+	@media (max-width: 767px) {
+		display: block;
+
+		&:before {
+			border-color: transparent !important;
+		}
+
+		&:after {
+			right: 50%;
+			top: auto;
+			bottom: -15px;
+			transform: translateX(50%);
+		}
+	}
+}
+
+
+
+/******************** 1.4 MISC ********************/
+.media-left {
+	padding-right: 20px;
+}
+
+.form-control {
+	box-shadow: none;
+	color: $body-text;
+
+	&:hover,
+	&:focus {
+		box-shadow: none;
+	}
+
+	&:focus {
+		border-color: $base-color;
+	}
+}
+
+/******************** 1.5 HELPER CLASS ********************/
+.margin-top-30 {
+	margin-top: 30px;
+}
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+
+.margin-top-80 {
+	margin-top: 80px;
+}
+
+.margin-bottom-80 {
+	margin-bottom: 80px;
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.margin-30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.margin-50 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.margin-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.padding-top-50 {
+	padding-top: 50px;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px;
+}
+
+.padding-bottom-40 {
+	padding-bottom: 40px;
+}
+
+.padding-right-35 {
+	padding-right: 35px;
+}
+
+.padding-left-35 {
+	padding-left: 35px;
+}
+
+.padding-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.padding-200 {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}

@@ -1,0 +1,34 @@
+$base-color: #4aa3df;
+$heading-text: #313131;
+$body-text: #969595;
+$body-text-alt: #919191;
+
+
+
+@mixin overlay_f($color: #000, $alpha: 0.5) {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(red($color), green($color), blue($color), $alpha);
+	}
+}
+
+@mixin radius($val: 10px) {
+	-webkit-border-radius: $val;
+	-moz-border-radius: $val;
+	-ms-border-radius: $val;
+	-o-border-radius: $val;
+	border-radius: $val;
+}
+
+@mixin icon-add-fill($src, $fill-new) {
+    $data-uri: data-uri('image/svg+xml;charset=UTF-8', "#{$src}");
+    $replace-default: escape('<path ');
+    $replace-new: escape('<path fill="#{$fill-new}" ');
+    $replace-src: replace("#{$data-uri}", $replace-default, $replace-new, "g");
+    background-image: e($replace-src);
+}

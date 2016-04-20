@@ -1,0 +1,31 @@
+/*
+|----------------------------------------------------------------------------
+| 3. HOME
+|----------------------------------------------------------------------------
+*/
+.home {
+	padding-bottom: 170px;
+	
+	.section-title {
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	.section-sub-title {
+		font-size: 1.385rem;
+		padding: 0 60px 20px 60px;
+	}
+
+	.section-title {
+		font-weight: 700;
+	}
+}
+
+.image-bg {
+	background: url(../images/home-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

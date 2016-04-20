@@ -1,0 +1,393 @@
+/*
+|----------------------------------------------------------------------------
+| 9. BLOGS
+|----------------------------------------------------------------------------
+*/
+/******************** 9.1 RECENT BLOGS  ********************/
+.recent-blogs {
+	padding-bottom: 70px;
+}
+
+.blog-items {
+	overflow: hidden;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.section-title {
+		font-size: 16px;
+	}
+
+	.meta-info {
+		text-transform: uppercase;
+		font-size: 10px;
+		margin-bottom: 20px;
+
+		a {
+			color: $body-text-alt;
+
+			&:hover {
+				color: $base-color;
+			}
+		}
+	}
+
+	/******************** 9.2 CAROUSEL CONTROLS ********************/
+	.carousel-control {
+		right: 3px;
+
+		&.left {
+			left: auto;
+			top: "calc(50% + 15px)";
+		}
+
+		&.right {
+			top: "calc(50% - 15px)";
+		}
+	}
+}
+
+
+.media-item,
+.media-content {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.media-item {
+	max-width: 110px;
+	max-height: 100%;
+
+	img,
+	.carousel-inner>.item>img {
+		max-width: none;
+	}
+
+	+ .media-content {
+		border-left-color: transparent;
+	}
+}
+
+.media-content {
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.03);
+
+	blockquote {
+		font-size: 1rem;
+	}
+}
+
+.post-blockquote {
+	.media-content {
+		padding-left: 80px;
+		position: relative;
+	}
+
+	.meta-info {
+		margin-bottom: 0;
+	}
+
+	[class*="icon-"],
+	[class*="icon-"] {
+		fill: $base-color;
+		position: absolute;
+		left: 20px;
+		top: 30px;
+		width: 40px;
+	}
+}
+
+/******************** 9.3 VIDEO POST ********************/
+.post-video {
+	.media-item {
+		position: relative;
+	}
+
+	.video-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 999;
+		background-color: rgba(0, 0, 0, 0.4);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.icon-play {
+		fill: #fff;
+		width: 50px;
+
+		&:hover {
+			fill: $base-color;
+		}
+	}
+}
+
+.video-element {
+	position: relative;
+	@include overlay_f(#000, 0);
+
+	&.dark {
+		@include overlay_f(#000, 0.5);
+	}
+
+	&:before {
+		transition: all 1s;
+	}
+
+	.btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: transparent;
+		border: 2px solid #fff;
+		padding: 20px;
+	}
+
+	video {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+
+
+/******************** 9.4 SLIDE SHOW POST ********************/
+.carousel-control {
+	font-size: 0;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+	text-shadow: 0 0 0;
+	top: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	display: table-cell;
+	vertical-align: middle;
+
+	&:hover,
+	&:focus {
+		background-color: $base-color;
+		opacity: 1;
+	}
+
+	[class*="icon-"],
+	[class^="icon-"] {
+		fill: #fff;
+	}
+
+	&.left {
+		left: 3px;
+	}
+
+	&.right {
+		right: 3px;
+	}
+
+	&.left,
+	&.right {
+		background-image: none;
+	}
+}
+
+.carousel-indicators {
+	bottom: 0;
+
+	li {
+		width: 12px;
+		height: 12px;
+		@include radius(12px);
+		margin: 0 2px;
+		transition: all 0.5s;
+		border-color: $base-color;
+
+		&.active {
+			margin: 0 2px;
+			background-color: $base-color;
+		}
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| 9.5 SINGLE BLOG POSTS
+|----------------------------------------------------------------------------
+*/
+.blog-post {
+	@media (min-width: 768px) {
+		padding-right: 80px;
+	}
+
+	.post-title {
+		font-size: 2rem;
+		color: $heading-text;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	.meta-info {
+		list-style-type: none;
+		padding: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		li {
+			display: inline-block;
+			margin-right: 30px;
+			font-size: 1.3rem;
+
+			a {
+				color: $body-text-alt;
+			}
+
+			[class*="icon-"],
+			[class^="icon-"] {
+				vertical-align: middle;
+				fill: $base-color;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	blockquote {
+		margin-bottom: 0;
+	}
+}
+
+.share-post {
+	color: $base-color;
+	margin: 50px 0 40px 0;
+	ul {
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			margin-left: 15px;
+		}
+	}
+
+	[class^="icon-"],
+	[class*="icon-"] {
+		fill: $body-text;
+
+		&:hover {
+			fill: $base-color;
+		}
+	}
+}
+
+/******************** 9.5.1 COMMENT AREA ********************/
+.comment-area {
+
+	.area-heading {
+		font-size: 1.5rem;
+		color: $heading-text;
+	}
+
+	.media-left {
+		vertical-align: middle;
+	}
+
+	img {
+		@include radius(100%);
+		max-width: 100px;
+	}
+
+	.name {
+		color: $heading-text;
+		font-size: 1.3rem;
+		margin-right: 10px;
+
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	.date, 
+	.reply {
+		font-size: 11px;
+	}
+
+	.reply {
+		font-weight: 700;
+	}
+
+	ul {
+		margin-bottom: 0;
+
+		li {
+			.media {
+				padding: 20px 20px 10px 20px;
+				@include radius(10px);
+				margin-top: 30px;
+			}
+		}
+	}
+
+	> ul {
+		> li {
+			.media {
+				background-color: #efefef;
+
+				@media (min-width: 768px) {
+					width: "calc(100% - 80px)";
+				}
+			}
+
+			ul {
+				.media {
+					width: 100%;
+					background-color: #f9f9f9;
+				}
+			}
+
+			> ul {
+				@media (min-width: 768px) {
+					margin-left: 80px;
+				}
+			}
+		}
+	}
+}
+
+/******************** 9.5.2 COMMENT FORM ********************/
+.comment-form {
+	input.form-control {
+		height: 45px;
+	}
+
+	.form-control {
+		padding: 10px 40px 10px 20px;
+		border-color: $body-text;
+		@include radius(7px);
+
+	}
+
+	.form-group {
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	[class*="icon-"],
+	[class^="icon-"] {
+		position: absolute;
+		top: 14px;
+		right: 15px;
+		width: 15px;
+		fill: currentColor;
+	}
+
+	.btn {
+		height: 45px;
+	}
+}

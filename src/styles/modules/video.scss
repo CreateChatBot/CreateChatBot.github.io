@@ -1,0 +1,65 @@
+/*
+|----------------------------------------------------------------------------
+| 5. VIDEO
+|----------------------------------------------------------------------------
+*/
+.video {
+	position: relative;
+	padding-bottom: 217px;
+
+	.container {
+		transition: all 0.3s;
+	}
+
+	&:before {
+		transition: all 1s;
+	}
+
+	&.overlay {
+		@include overlay_f(#000, 0);
+	}
+
+	&.dark {
+		@include overlay_f(#000, 0.5);
+	}
+
+	.playing {
+		opacity: 0.4;
+	}
+
+	video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background: url(../video/video.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	.play-btn {
+		border: 2px solid #fff;
+		background-color: transparent;
+		display: inline-block;
+		padding: 25px;
+		@include radius;
+		transition: all 0.3s;
+
+		&:hover {
+			border-color: $base-color;
+
+			.icon-play {
+				fill: $base-color;
+			}
+		}
+	}
+
+	.icon-play {
+		width: 50px;
+	}
+}

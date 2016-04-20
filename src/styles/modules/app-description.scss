@@ -1,0 +1,30 @@
+/*
+|----------------------------------------------------------------------------
+| 4. APP DESCRIPTION
+|----------------------------------------------------------------------------
+*/
+.app-description {
+	padding-bottom: 50px;
+}
+
+.features-img {
+	@media (min-width: 992px) {
+		margin-top: 67px;
+	}
+
+	@media (max-width: 991px) {
+		img {
+			margin: auto;
+		}
+	}
+}
+
+.add-svg {
+	width: 40px;
+    height: 40px;
+    @include icon-add-fill("../icons/twitter.svg", #5eedde);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}

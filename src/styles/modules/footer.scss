@@ -1,0 +1,185 @@
+/*
+|----------------------------------------------------------------------------
+| 11. SUBSCRIBE
+|----------------------------------------------------------------------------
+*/
+.subscribe-form {
+	background: #fff;
+	@include radius(10px);
+	padding: 30px 30px 0 30px;
+
+	@media (min-width: 768px) {
+		padding: 50px 150px 20px;
+	}
+
+	.form-control {
+		background-color: #f9f9f9;
+		box-shadow: none;
+		@include radius(15px);
+		border: 0;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.form-control, .btn {
+		height: 45px;
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| 12. DOWNLOAD
+|----------------------------------------------------------------------------
+*/
+.download {
+	padding-bottom: 70px;
+
+	&.image-bg {
+		background: url(../images/download-bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	&.overlay {
+		@include overlay_f(#000, 0.5);
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| 13. CONTACT US
+|----------------------------------------------------------------------------
+*/
+.contact-us {
+	padding-bottom: 70px;
+}
+
+.address {
+	p {
+		padding-left: 30px;
+		position: relative;
+		
+		&:before {
+			content: "";
+			height: 18px;
+			width: 18px;
+			position: absolute;
+			left: 0;
+			top: 2px;
+			background-color: currentColor;
+		}
+	}
+
+	.call:before {
+		-webkit-mask: url(../icons/phone.svg) no-repeat 50% 50%;
+		-moz-mask: url(../icons/phone.svg) no-repeat 50% 50%;
+		-ms-mask: url(../icons/phone.svg) no-repeat 50% 50%;
+		mask: url(../icons/phone.svg) no-repeat 50% 50%;
+		-webkit-mask-size: cover;
+		-moz-mask-size: cover;
+		-ms-mask-size: cover;
+		mask-size: cover;
+	}
+
+	.email:before {
+		-webkit-mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
+		-moz-mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
+		-ms-mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
+		mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
+		-webkit-mask-size: cover;
+		-moz-mask-size: cover;
+		-ms-mask-size: cover;
+		mask-size: cover;
+	}
+
+	.post:before {
+		-webkit-mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
+		-moz-mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
+		-ms-mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
+		mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
+		-webkit-mask-size: cover;
+		-moz-mask-size: cover;
+		-ms-mask-size: cover;
+		mask-size: cover;
+	}
+}
+
+.social-media {
+	list-style: none;
+	padding: 0;
+
+	li {
+		display: inline-block;
+
+		+ li {
+			margin-left: 10px;
+		}
+
+		[class^="icon-"],
+		[class*="icon-"] {
+			padding: 5px;
+			@include radius(7px);
+			width: 30px;
+			height: 30px;
+			fill: currentColor;
+		}
+
+		a {
+			color: currentColor;
+
+			&:hover,
+			&:focus {
+				[class^="icon-"],
+				[class*="icon-"] {
+					fill: #fff;
+				}
+
+				.icon-facebook {
+					background: #002E62;
+				}
+
+				.icon-twitter {
+					background: #54ABEE;
+				}
+
+				.icon-google-plus {
+					background: #D34836;
+				}
+
+				.icon-dribbble {
+					background: #EC4A89;
+				}
+			}
+		}
+	}
+}
+
+.quick-contact {
+	.form-control {
+		background-color: #fff;
+		box-shadow: inset 0 0 0;
+	}
+
+	.btn {
+		@include radius(4px);
+	}
+}
+
+.footer {
+	padding: 30px 0;
+	p {
+		margin-bottom: 0;
+		font-weight: 600;
+
+		a {
+			color: $body-text;
+
+			&:hover {
+				color: $base-color;
+			}
+		}
+	}
+}

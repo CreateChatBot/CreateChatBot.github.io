@@ -1,0 +1,43 @@
+/*
+|----------------------------------------------------------------------------
+| 8. SCREENSHOTS
+|----------------------------------------------------------------------------
+*/
+
+.swiper-frame  img{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9999;
+	width: 366px;
+	height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	top: auto;
+	right: auto;
+	background-size: 8px 12px;
+	width: 8px;
+	height: 12px;
+	margin-top: 20px;
+	transform: translateX(-50%);
+}
+
+.swiper-button-prev {
+	left: "calc(50% - 20px)";
+}
+
+.swiper-button-next {
+	left: "calc(50% + 20px)";
+}
+
+.swiper-slide {
+	margin-top: 90px;
+	margin-bottom: 90px;
+
+	img {
+		width: 320px;
+	}
+}

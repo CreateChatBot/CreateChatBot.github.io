@@ -1,0 +1,220 @@
+/*
+|----------------------------------------------------------------------------
+| 2. NAVBAR
+|----------------------------------------------------------------------------
+*/
+.nav {
+	> li {
+
+		&.active {
+			> a {
+				color: $base-color;
+			}
+		}
+
+		> a {
+			text-transform: uppercase;
+			font-size: 15px;
+			color: $body-text;
+
+			&:hover,
+			&:focus {
+				color: $base-color;
+				background-color: #f9f9f9;
+			}
+		}
+	}
+}
+
+.navbar {
+	background: #fff;
+	border-bottom: 1px solid lighten($body-text, 35%);
+}
+
+.navbar-header {
+	[class^="icon"],
+	[class*="icon"] {
+		width: 42px;
+		background-color: #e74c3c;
+		padding: 7px;
+		fill: #fff;
+		@include radius(7px);
+	}
+}
+
+.navbar-brand {
+	height: 80px;
+
+	.logo {
+		height: 100%;
+		width: auto;
+	}
+}
+
+.navbar-collapse {
+	border-color: lighten($body-text, 35%);
+}
+
+/******************** 	2.1 NAVBAR STYLE - FIXED TOP ********************/
+.navbar-top {
+	transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+	.navbar-top {
+		.navbar-nav {
+			> li {
+				> a {
+					padding-top: 30px;
+					padding-bottom: 30px;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
+	.navbar-fixed-top {
+		background-color: transparent;
+		border-color: transparent;
+
+		.navbar-nav {
+			> li {
+				> a {
+					color: #fff;
+
+					&:hover,
+					&:focus {
+						color: $base-color;
+					}
+				}
+			}
+		}
+
+		&.scrolling {
+			background-color: #fff;
+			border-color: lighten($body-text, 35%);
+
+			.navbar-nav {
+				> li {
+					> a {
+						color: $body-text;
+					}
+
+					&:hover,
+					&:focus,
+					&.active {
+						> a {
+							color: $base-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-top {
+		.navbar-nav {
+			> li {
+				> a {
+					text-transform: capitalize;
+					padding-left: 8px;
+					padding-right: 8px;
+				}
+			}
+		}
+	}
+}
+
+
+/******************** 2.2 NAVBAR STYLE - LEFT ********************/
+.navbar-fixed-left {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 99999;
+	@include radius(0);
+	border-right: 1px solid #efefef;
+	margin-bottom: 0;
+}
+	
+@media (min-width: 768px) {
+	.navbar-left-switch {
+		position: fixed;
+		top: 100px;
+		left: 0;
+		background: #fff;
+		width: 55px;
+		height: 55px;
+		z-index: 10;
+		border: 1px solid #efefef;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-top-right-radius: 10px;		
+		border-bottom-right-radius: 10px;
+		cursor: pointer;
+
+		[class*="icon-"],
+		[class^="icon-"] {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.navbar-fixed-left {
+		bottom: 0;
+		right: auto;
+		left: -202px;
+		transition: all 0.5s;
+
+		&.toggle-nav {
+			left: 0;
+		}
+
+		.container {
+			width: 200px;
+		}
+
+		.navbar-header {
+			float: none;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.navbar-brand {
+			float: none;
+
+			> img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.navbar-nav {
+			float: none;
+			margin-left: -30px;
+			margin-right: -30px;
+
+			> li {
+				float: none;
+				margin-right: -1px;
+
+				> a {
+					padding-left: 60px;
+					border-bottom: 1px solid #efefef;
+				}
+
+				&.active {
+					border-right: 3px solid $base-color;
+
+					> a {
+						background-color: #efefef;
+					}
+				}
+			}
+		}
+	}
+}
