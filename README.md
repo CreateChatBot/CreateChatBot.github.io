@@ -5,6 +5,11 @@ gulp-frontend-boilerplate
 
 This is a work in progress. Feel free to contribute. For an older version without Gulp 4, see [0.6.1](https://github.com/dmnsgn/gulp-frontend-boilerplate/releases/tag/0.6.1).
 
+## Deploy to master
+
+```bash
+npm run deploy
+```
 
 ## Install
 ### Requirements
