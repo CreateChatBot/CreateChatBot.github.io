@@ -118,8 +118,8 @@
       "ios 6",
       "android 4"
     ],
-    "prodURL": "http://domain.tld",
-    "shareImageURL": "http://domain.tld/static/share.png",
+    "prodURL": "http://createchatbot.com",
+    "shareImageURL": "http://createchatbot.com/static/share.png",
     "twitterHandle": "@domain",
     "analyticsUA": "UA-XXXXX-X",
     "developerURL": ""
