@@ -1,18 +1,9 @@
 {
-  "name": "gulp-frontend-boilerplate",
-  "title": "Gulp Frontend Boilerplate",
-  "version": "1.3.3",
-  "description": "An ES6 boilerplate with common frontend tasks using Gulp 4 as build system.",
-  "author": "Damien Seguin <https://twitter.com/dmnsgn>",
-  "homepage": "https://github.com/dmnsgn/gulp-frontend-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dmnsgn/gulp-frontend-boilerplate"
-  },
-  "issues": {
-    "url": "https://github.com/dmnsgn/gulp-frontend-boilerplate/issues"
-  },
-  "license": "MIT",
+  "name": "CreateChatBot",
+  "title": "Create ChatBot",
+  "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
+  "author": "Sergey Alekseev, Kiryl Ply",
+  "homepage": "http://createchatbot.com",
   "vendors": [
     "./node_modules/greensock/src/uncompressed/TweenMax.js"
   ],
@@ -51,7 +42,7 @@
     "gulp-rename": "^1.2.x",
     "gulp-sitemap": "^2.2.x",
     "gulp-sass": "^2.2.x",
-    "gulp-sass-glob": "^1.0.6", 
+    "gulp-sass-glob": "^1.0.6",
     "gulp-sourcemaps": "^1.6.x",
     "gulp-uglify": "^1.5.x",
     "gulp-util": "^3.0.x",
@@ -111,7 +102,7 @@
     ],
     "prodURL": "http://createchatbot.com",
     "shareImageURL": "http://createchatbot.com/static/share.png",
-    "twitterHandle": "@domain",
+    "twitterHandle": "@createchatbot",
     "analyticsUA": "UA-XXXXX-X",
     "developerURL": ""
   },

@@ -1,12 +1,12 @@
 {
-  "name": "gulp-frontend-boilerplate",
-  "description": "An ES6 boilerplate with common frontend tasks using Gulp 4 as build system.",
+  "name": "Create ChatBot",
+  "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
   "main": "",
   "authors": [
-    "Damien Seguin <https://twitter.com/dmnsgn>"
+    "Sergey Alekseev"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/CreateChatBot/CreateChatBot.github.io",
+  "homepage": "http://createchatbot.com",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^4.0.x",
     "jquery": "^2.2.3",
     "jquery.localScroll": "^1.4.0"
   }

@@ -2,10 +2,18 @@
 
 // @import '_sprite';
 @import 'node_modules/normalize.css/normalize';
+//animations
 // @import 'node_modules/sass-easing/_easings';
 
-// @import 'fonts/_fonts';
+@import "common/variables";
 
-@import 'modules/variable';
-@import 'modules/global';
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+@import 'fonts/_fonts';
+
 @import 'modules/**/*';
+
+// @import "override/override-bootstrap";
+// @import "override/override-libs";
