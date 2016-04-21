@@ -1,11 +1,13 @@
 {
-  "name": "CreateChatBot",
+  "name": "createchatbot",
   "title": "Create ChatBot",
   "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
   "author": "Sergey Alekseev, Kiryl Ply",
   "homepage": "http://createchatbot.com",
   "vendors": [
-    "./node_modules/greensock/src/uncompressed/TweenMax.js"
+    "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/greensock/src/uncompressed/TweenMax.js",
+    "./node_modules/svg-injector/dist/svg-injector.min.js"
   ],
   "napa": {
     "greensock": "greensock/GreenSock-JS"
@@ -40,9 +42,9 @@
     "gulp-postcss": "^6.0.x",
     "gulp-preprocess": "^2.0.x",
     "gulp-rename": "^1.2.x",
-    "gulp-sitemap": "^2.2.x",
     "gulp-sass": "^2.2.x",
     "gulp-sass-glob": "^1.0.6",
+    "gulp-sitemap": "^2.2.x",
     "gulp-sourcemaps": "^1.6.x",
     "gulp-uglify": "^1.5.x",
     "gulp-util": "^3.0.x",
@@ -50,6 +52,7 @@
     "gulp-watch": "^4.3.x",
     "gulp.spritesmith": "^6.0.x",
     "imagemin-pngquant": "^4.2.x",
+    "jquery": "^2.2.3",
     "minimist": "^1.2.x",
     "napa": "^2.0.x",
     "postcss": "^5.0.x",
@@ -57,6 +60,7 @@
     "psi": "^2.0.x",
     "stylelint": "^4.4.x",
     "stylelint-config-suitcss": "^4.0.x",
+    "svg-injector": "^1.1.3",
     "vinyl-buffer": "^1.0.x",
     "vinyl-source-stream": "^1.1.x",
     "watchify": "^3.6.x"
@@ -72,7 +76,9 @@
     "test": "./test"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "stylelint": {
     "extends": "stylelint-config-suitcss",
@@ -82,7 +88,9 @@
   },
   "eslintConfig": {
     "extends": "airbnb",
-    "plugins": ["react"],
+    "plugins": [
+      "react"
+    ],
     "rules": {
       "comma-dangle": 0
     }
@@ -109,5 +117,15 @@
   "extensions": {
     "scripts": "js",
     "styles": "scss"
+  },
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreateChatBot/CreateChatBot.github.io.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreateChatBot/CreateChatBot.github.io/issues"
   }
 }

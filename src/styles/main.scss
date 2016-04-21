@@ -1,19 +1,20 @@
 @charset "UTF-8";
 
 // @import '_sprite';
-@import 'node_modules/normalize.css/normalize';
-//animations
+// animations
 // @import 'node_modules/sass-easing/_easings';
-
-@import "common/variables";
 
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
-@import 'fonts/_fonts';
+@import "common/variables";
+
+@import 'node_modules/normalize.css/normalize';
 
 @import 'modules/**/*';
 
-// @import "override/override-bootstrap";
+@import "override/override-bootstrap";
 // @import "override/override-libs";
+
+@import 'fonts/_fonts';

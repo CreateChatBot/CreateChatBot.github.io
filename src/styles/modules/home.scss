@@ -5,7 +5,7 @@
 */
 .home {
 	padding-bottom: 170px;
-	
+
 	.section-title {
 		text-transform: uppercase;
 		color: #fff;
@@ -22,10 +22,10 @@
 }
 
 .image-bg {
-	background: url(../images/home-bg.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-ms-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url(../images/home-bg.png) repeat center -55px;
+	-webkit-background-size: 60%;
+	-moz-background-size: 60%;
+	-ms-background-size: 60%;
+	-o-background-size: 60%;
+	background-size: 60%;
 }
