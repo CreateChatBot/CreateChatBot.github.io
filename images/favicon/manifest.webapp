@@ -1,14 +1,14 @@
 {
-  "version": "1.3.3",
-  "name": "Gulp Frontend Boilerplate",
-  "description": "An ES6 boilerplate with common frontend tasks using Gulp 4 as build system.",
+  "version": "1.0.0",
+  "name": "Create ChatBot",
+  "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
   "icons": {
     "60": "images/favicon/firefox_app_60x60.png",
     "128": "images/favicon/firefox_app_128x128.png",
     "512": "images/favicon/firefox_app_512x512.png"
   },
   "developer": {
-    "name": "Damien Seguin <https://twitter.com/dmnsgn>",
+    "name": "Sergey Alekseev, Kiryl Ply",
     "url": ""
   }
 }
