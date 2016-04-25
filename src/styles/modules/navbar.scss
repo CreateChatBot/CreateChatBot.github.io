@@ -3,6 +3,29 @@
 | 2. NAVBAR
 |----------------------------------------------------------------------------
 */
+
+.navbar {
+	background: #fff;
+}
+
+.navbar-brand {
+	height: 80px;
+
+	.logo {
+		height: 100%;
+		width: auto;
+	}
+}
+
+.navbar-toggler {
+  padding: .75rem;
+}
+
+.navbar-toggleable-xs {
+	border-color: lighten($body-text, 35%);
+	// display: block;
+}
+
 .nav {
 	> li {
 
@@ -24,35 +47,6 @@
 			}
 		}
 	}
-}
-
-.navbar {
-	background: #fff;
-	border-bottom: 1px solid lighten($body-text, 35%);
-}
-
-.navbar-header {
-	[class^="icon"],
-	[class*="icon"] {
-		width: 42px;
-		background-color: #e74c3c;
-		padding: 7px;
-		fill: #fff;
-		@include radius(7px);
-	}
-}
-
-.navbar-brand {
-	height: 80px;
-
-	.logo {
-		height: 100%;
-		width: auto;
-	}
-}
-
-.navbar-collapse {
-	border-color: lighten($body-text, 35%);
 }
 
 /******************** 	2.1 NAVBAR STYLE - FIXED TOP ********************/
@@ -139,7 +133,7 @@
 	border-right: 1px solid #efefef;
 	margin-bottom: 0;
 }
-	
+
 @media (min-width: 768px) {
 	.navbar-left-switch {
 		position: fixed;
@@ -153,7 +147,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-top-right-radius: 10px;		
+		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 		cursor: pointer;
 

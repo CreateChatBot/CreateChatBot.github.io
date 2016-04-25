@@ -2,3 +2,10 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+      background-color: #fff;
+      border-color: #fff;
+  }
+}

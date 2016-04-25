@@ -9,6 +9,7 @@
 	.section-title {
 		text-transform: uppercase;
 		color: #fff;
+		text-align: center;
 	}
 
 	.section-sub-title {
@@ -22,10 +23,10 @@
 }
 
 .image-bg {
-	background: url(../images/home-bg.png) repeat center -55px;
-	-webkit-background-size: 60%;
-	-moz-background-size: 60%;
-	-ms-background-size: 60%;
-	-o-background-size: 60%;
-	background-size: 60%;
+	background: url(../images/home-bg.png) repeat center -25px;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-ms-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
 }
