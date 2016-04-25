@@ -1,11 +1,16 @@
 .media-left, .media-right, .media-body {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media (min-width: 768px) {
   .navbar-fixed-top {
-      background-color: #fff;
-      border-color: #fff;
+    background-color: #fff;
+    border-color: #fff;
   }
+}
+
+.media, .media-body {
+  display: flex;
+  align-items: center;
 }

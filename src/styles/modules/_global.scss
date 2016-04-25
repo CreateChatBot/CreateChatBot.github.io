@@ -53,14 +53,19 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.25;
+	color: $heading-text;
 }
 
 h1 {
 	font-size: 4.5rem;
 }
 
+h2 {
+	font-size: 2rem;
+}
+
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.35rem;
 }
 
 h4 {
@@ -93,6 +98,10 @@ blockquote {
 ul {
 	list-style-type: none;
 	padding: 0;
+}
+
+.text-center {
+	text-align: center;
 }
 
 
@@ -149,7 +158,6 @@ ul {
 
 .buttons-group {
 	.btn {
-		margin-left: 15px;
 		margin-right: 15px;
 		margin-bottom: 30px;
 	}
@@ -163,7 +171,7 @@ ul {
 	vertical-align: middle;
 	height: auto;
 	transition: all 0.3s;
-	width: 32px;
+	width: 50px;
 }
 
 .outer-shape {
@@ -182,9 +190,6 @@ ul {
 
 	[class^="icon-"],
 	[class*="icon-"] {
-		position: absolute;
-		left: calc(50% - 20px);
-		top: calc(50% - 12px);
 		fill: $base-color;
 		transition: all 0.3s;
 	}
@@ -244,7 +249,7 @@ ul {
 }
 
 .off-white {
-	background-color: #f9f9f9;
+	background-color: #F3F3F3;
 }
 
 .overlay {
@@ -255,6 +260,8 @@ ul {
 	.section-title {
 		color: #fff;
 	}
+
+
 
 	.section-title-2:before,
 	.section-title-2:after {
@@ -277,19 +284,23 @@ ul {
 	}
 }
 
+.section-title-1 {
+	font-size: 1.75rem !important;
+}
+
 .section-title {
-	margin-top: 0;
+	margin: 0;
 	color: #313131;
 }
 
 .section-sub-title {
-	font-size: 1.15rem;
+	font-size: 1.35rem;
 	line-height: 2;
 	margin-bottom: 0;
 }
 
 .section-heading {
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 .section-title-1 {
@@ -301,6 +312,7 @@ ul {
 .section-title-2 {
 	display: inline-block;
 	position: relative;
+	line-height: 3rem;
 
 	&:before,
 	&:after {
@@ -336,7 +348,6 @@ ul {
 }
 
 
-
 /******************** 1.4 MISC ********************/
 .media-left {
 	padding-right: 20px;
@@ -354,6 +365,10 @@ ul {
 	&:focus {
 		border-color: $base-color;
 	}
+}
+
+.rounded {
+	@include radius(50%);
 }
 
 /******************** 1.5 HELPER CLASS ********************/
@@ -418,6 +433,10 @@ ul {
 
 .padding-left-35 {
 	padding-left: 35px;
+}
+
+.padding-75 {
+	padding: 75px 0;
 }
 
 .padding-100 {

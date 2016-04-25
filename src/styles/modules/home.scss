@@ -4,7 +4,7 @@
 |----------------------------------------------------------------------------
 */
 .home {
-	padding-bottom: 170px;
+	padding-bottom: 100px;
 
 	.section-title {
 		text-transform: uppercase;
@@ -23,10 +23,10 @@
 }
 
 .image-bg {
-	background: url(../images/home-bg.png) repeat center -25px;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-ms-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
+	background: url(../images/home-bg.png) repeat center center;
+	-webkit-background-size: 80%;
+	-moz-background-size: 80%;
+	-ms-background-size: 80%;
+	-o-background-size: 80%;
+	background-size: 80%;
 }
