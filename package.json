@@ -31,7 +31,6 @@
     "favicons": "^4.2.x",
     "fontmin": "^0.8.x",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.x",
     "gulp-changed": "^1.3.x",
     "gulp-filter": "^3.0.x",
