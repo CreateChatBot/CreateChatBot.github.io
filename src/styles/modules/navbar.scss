@@ -6,12 +6,22 @@
 
 .navbar {
 	background: #fff;
-  padding: 1rem 3rem;
+	border-bottom: 2px solid #F3F3F3;
+}
+
+.navbar-nav {
+	display: inline-flex;
+}
+
+.navbar-nav .nav-link {
+  display: block;
+  padding: .425rem .75rem;
 }
 
 .navbar-brand {
-	line-height: 2.2rem;
-  margin-right: 3rem;
+	padding: .75rem;
+  line-height: 1.5rem;
+  margin-right: 5rem;
 
 	.logo {
 		height: 100%;
@@ -61,8 +71,6 @@
 		.navbar-nav {
 			> li {
 				> a {
-					padding-top: 30px;
-					padding-bottom: 30px;
 					background-color: transparent;
 				}
 			}
@@ -114,7 +122,6 @@
 		.navbar-nav {
 			> li {
 				> a {
-					text-transform: capitalize;
 					padding-left: 8px;
 					padding-right: 8px;
 				}
