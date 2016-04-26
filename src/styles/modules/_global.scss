@@ -101,6 +101,11 @@ ul {
 }
 
 
+img.img-100 {
+	max-width: 100%;
+}
+
+
 /******************** 1.1 BUTTONS ********************/
 .btn {
 	border-radius: 10px;
@@ -129,15 +134,16 @@ ul {
 }
 
 .btn-md {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	padding: 12px 22px;
 }
 
 .btn-lg {
-	font-size: 1.85rem;
-	padding: 18px;
+	font-size: 1.3rem;
+	padding: 15px;
 	font-weight: 600;
-	min-width: 200px;
+	width: 200px;
+	max-width: 100%;
 
 	[class^="icon-"],
 	[class*="icon-"] {
@@ -154,8 +160,8 @@ ul {
 
 .buttons-group {
 	.btn {
-		margin-right: 15px;
-		margin-bottom: 30px;
+		margin-right: 10px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -347,9 +353,6 @@ svg.icon {
 
 
 /******************** 1.4 MISC ********************/
-.media-left {
-	padding-right: 20px;
-}
 
 .form-control {
 	box-shadow: none;
@@ -373,6 +376,10 @@ svg.icon {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+#twitter-widget-0 {
+	margin-top: 2rem !important;
 }
 
 /******************** 1.5 HELPER CLASS ********************/
