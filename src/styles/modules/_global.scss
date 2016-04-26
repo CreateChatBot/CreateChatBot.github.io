@@ -100,10 +100,6 @@ ul {
 	padding: 0;
 }
 
-.text-center {
-	text-align: center;
-}
-
 
 /******************** 1.1 BUTTONS ********************/
 .btn {
@@ -163,8 +159,6 @@ ul {
 	}
 }
 
-
-
 /******************** ICONOGRAPHY ********************/
 [class^="icon-"],
 [class*="icon-"] {
@@ -172,6 +166,12 @@ ul {
 	height: auto;
 	transition: all 0.3s;
 	width: 50px;
+}
+
+svg.icon {
+	display: block;
+	fill: currentColor;
+	width: 25rem;
 }
 
 .outer-shape {
