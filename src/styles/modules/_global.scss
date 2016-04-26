@@ -261,8 +261,6 @@ svg.icon {
 		color: #fff;
 	}
 
-
-
 	.section-title-2:before,
 	.section-title-2:after {
 		border-color: #fff;
@@ -369,6 +367,12 @@ svg.icon {
 
 .rounded {
 	@include radius(50%);
+}
+
+.fl-al-ct {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 /******************** 1.5 HELPER CLASS ********************/

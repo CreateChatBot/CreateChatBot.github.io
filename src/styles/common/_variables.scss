@@ -3,6 +3,8 @@ $heading-text: #313131;
 $body-text: #969595;
 $body-text-alt: #919191;
 
+$enable-flex: true !default;
+
 @mixin overlay_f($color: #000, $alpha: 0.5) {
 	&:before {
 		content: "";
