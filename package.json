@@ -68,7 +68,7 @@
   "scripts": {
     "init": "npm i inquirer chalk cli-spinner del babel-cli babel-preset-es2015 && babel-node ./boilerplate/init/index.js",
     "install": "napa",
-    "deploy": "git subtree push --prefix dist origin master"
+    "deploy": "git push origin :master --force && git subtree push --prefix dist origin master"
   },
   "directories": {
     "src": "./src",

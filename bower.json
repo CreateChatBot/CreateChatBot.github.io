@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^4.0.x",
+    "bootstrap": "https://github.com/twbs/bootstrap.git#v4-dev",
     "jquery": "^2.2.3",
     "jquery.localScroll": "^1.4.0"
   }
