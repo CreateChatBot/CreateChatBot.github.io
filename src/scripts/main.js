@@ -164,6 +164,8 @@ $('.navbar-nav').on('click', 'a', function(event) {
 
 
 /******************** SVG INJECTION ********************/
+
+
 // Elements to inject
  var mySVGsToInject = document.querySelectorAll('img.inject-me');
 

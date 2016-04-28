@@ -10,7 +10,7 @@
 }
 
 .navbar-nav {
-	display: inline-block;
+	// display: inline-block;
 }
 
 .navbar-nav .nav-link {
@@ -23,7 +23,6 @@
 	align-items: center;
 	padding: .75rem;
   line-height: 1.5rem;
-  margin-right: 5rem;
 	text-transform: uppercase;
   font-size: 15px;
 
@@ -36,6 +35,7 @@
 
 .navbar-toggler {
   padding: .75rem;
+	clear: left;
 }
 
 .navbar-toggleable-xs {

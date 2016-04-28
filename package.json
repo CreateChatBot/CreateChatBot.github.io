@@ -7,7 +7,7 @@
   "vendors": [
     "./node_modules/jquery/dist/jquery.js",
     "./node_modules/greensock/src/uncompressed/TweenMax.js",
-    "./node_modules/svg-injector/dist/svg-injector.min.js"
+    "./node_modules/svg-injector/svg-injector.js"
   ],
   "napa": {
     "greensock": "greensock/GreenSock-JS"
