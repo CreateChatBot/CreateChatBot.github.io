@@ -61,23 +61,56 @@
 	p {
 		padding-left: 30px;
 		position: relative;
-		
+
 		&:before {
 			content: "";
 			height: 18px;
 			width: 18px;
 			position: absolute;
 			left: 0;
-			top: 2px;
+			top: 4px;
 			background-color: currentColor;
 		}
 	}
 
 	.call:before {
-		-webkit-mask: url(../icons/phone.svg) no-repeat 50% 50%;
-		-moz-mask: url(../icons/phone.svg) no-repeat 50% 50%;
-		-ms-mask: url(../icons/phone.svg) no-repeat 50% 50%;
-		mask: url(../icons/phone.svg) no-repeat 50% 50%;
+		-webkit-mask: url(../images/icons/phone.svg) no-repeat 50% 50%;
+		-moz-mask: url(../images/icons/phone.svg) no-repeat 50% 50%;
+		-ms-mask: url(../images/icons/phone.svg) no-repeat 50% 50%;
+		mask: url(../images/icons/phone.svg) no-repeat 50% 50%;
+		-webkit-mask-size: cover;
+		-moz-mask-size: cover;
+		-ms-mask-size: cover;
+		mask-size: cover;
+	}
+
+	.skype:before {
+		-webkit-mask: url(../images/icons/skype.svg) no-repeat 50% 50%;
+		-moz-mask: url(../images/icons/skype.svg) no-repeat 50% 50%;
+		-ms-mask: url(../images/icons/skype.svg) no-repeat 50% 50%;
+		mask: url(../images/icons/skype.svg) no-repeat 50% 50%;
+		-webkit-mask-size: cover;
+		-moz-mask-size: cover;
+		-ms-mask-size: cover;
+		mask-size: cover;
+	}
+
+	.telegram:before {
+		-webkit-mask: url(../images/icons/telegram.svg) no-repeat 50% 50%;
+		-moz-mask: url(../images/icons/telegram.svg) no-repeat 50% 50%;
+		-ms-mask: url(../images/icons/telegram.svg) no-repeat 50% 50%;
+		mask: url(../images/icons/telegram.svg) no-repeat 50% 50%;
+		-webkit-mask-size: cover;
+		-moz-mask-size: cover;
+		-ms-mask-size: cover;
+		mask-size: cover;
+	}
+
+	.fb:before {
+		-webkit-mask: url(../images/icons/facebook-square.svg) no-repeat 50% 50%;
+		-moz-mask: url(../images/icons/facebook-square.svg) no-repeat 50% 50%;
+		-ms-mask: url(../images/icons/facebook-square.svg) no-repeat 50% 50%;
+		mask: url(../images/icons/facebook-square.svg) no-repeat 50% 50%;
 		-webkit-mask-size: cover;
 		-moz-mask-size: cover;
 		-ms-mask-size: cover;
@@ -85,10 +118,10 @@
 	}
 
 	.email:before {
-		-webkit-mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
-		-moz-mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
-		-ms-mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
-		mask: url(../icons/envelope-o.svg) no-repeat 50% 50%;
+		-webkit-mask: url(../images/icons/envelope-o.svg) no-repeat 50% 50%;
+		-moz-mask: url(../images/icons/envelope-o.svg) no-repeat 50% 50%;
+		-ms-mask: url(../images/icons/envelope-o.svg) no-repeat 50% 50%;
+		mask: url(../images/icons/envelope-o.svg) no-repeat 50% 50%;
 		-webkit-mask-size: cover;
 		-moz-mask-size: cover;
 		-ms-mask-size: cover;
@@ -96,10 +129,10 @@
 	}
 
 	.post:before {
-		-webkit-mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
-		-moz-mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
-		-ms-mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
-		mask: url(../icons/map-marker.svg) no-repeat 50% 50%;
+		-webkit-mask: url(../images/icons/map-marker.svg) no-repeat 50% 50%;
+		-moz-mask: url(../images/icons/map-marker.svg) no-repeat 50% 50%;
+		-ms-mask: url(../images/icons/map-marker.svg) no-repeat 50% 50%;
+		mask: url(../images/icons/map-marker.svg) no-repeat 50% 50%;
 		-webkit-mask-size: cover;
 		-moz-mask-size: cover;
 		-ms-mask-size: cover;

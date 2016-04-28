@@ -1,5 +1,5 @@
 {
-  "name": "Create ChatBot",
+  "name": "Create Chatbot",
   "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
   "main": "",
   "authors": [
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "https://github.com/twbs/bootstrap.git#v4-dev",
+    "bootstrap": "^4.0.x",
     "jquery": "^2.2.3",
     "jquery.localScroll": "^1.4.0"
   }

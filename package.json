@@ -1,6 +1,6 @@
 {
   "name": "createchatbot",
-  "title": "Create ChatBot",
+  "title": "Create Chatbot",
   "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
   "author": "Sergey Alekseev, Kiryl Ply",
   "homepage": "http://createchatbot.com",
@@ -122,10 +122,10 @@
   "main": "gulpfile.babel.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CreateChatBot/CreateChatBot.github.io.git"
+    "url": "git+https://github.com/CreateChatbot/CreateChatbot.github.io.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CreateChatBot/CreateChatBot.github.io/issues"
+    "url": "https://github.com/CreateChatbot/CreateChatbot.github.io/issues"
   }
 }

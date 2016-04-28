@@ -76,6 +76,12 @@ h5 {
 	font-size: 1.1rem;
 }
 
+@media (max-width: 370px) {
+  .media-body > h3 {
+    font-size: 0.9rem;
+  }
+}
+
 p {
 	line-height: 1.8;
 }
@@ -178,6 +184,7 @@ svg.icon {
 	display: block;
 	fill: currentColor;
 	width: 25rem;
+	height: auto;
 }
 
 .outer-shape {
@@ -352,7 +359,7 @@ svg.icon {
 }
 
 
-/******************** 1.4 MISC ********************/
+/******************** 1.4 MISC & HELPERS ********************/
 
 .form-control {
 	box-shadow: none;
