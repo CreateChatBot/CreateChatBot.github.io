@@ -7,6 +7,9 @@
 .navbar {
 	background: #fff;
 	border-bottom: 2px solid #F3F3F3;
+	@media (min-width: 544px) {
+		display: flex;
+	}
 }
 
 .navbar-nav {
@@ -25,6 +28,7 @@
   line-height: 1.5rem;
 	text-transform: uppercase;
   font-size: 15px;
+	float: none;
 
 	.logo {
 		height: 22px;
@@ -33,8 +37,12 @@
 	}
 }
 
+
 .navbar-toggler {
   padding: .75rem;
+	right: 10px;
+  top: 8px;
+  position: absolute;
 	clear: left;
 }
 

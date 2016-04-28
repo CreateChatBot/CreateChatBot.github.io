@@ -6,12 +6,10 @@
 .subscribe-form {
 	background: #fff;
 	@include radius(10px);
-	padding: 30px 30px 0 30px;
-
+	padding: 30px 30px 0;
 	@media (min-width: 768px) {
 		padding: 50px 150px 20px;
 	}
-
 	.form-control {
 		background-color: #f9f9f9;
 		box-shadow: none;
@@ -20,14 +18,11 @@
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-
-	.form-control, .btn {
+	.btn,
+	.form-control {
 		height: 45px;
 	}
 }
-
-
-
 /*
 |----------------------------------------------------------------------------
 | 12. DOWNLOAD
@@ -35,94 +30,70 @@
 */
 .download {
 	padding-bottom: 70px;
-
 	&.image-bg {
-		background: url(../images/download-bg.jpg) no-repeat center center;
+		background: url("../images/download-bg.jpg") no-repeat center center;
 		background-size: cover;
 	}
-
 	&.overlay {
 		@include overlay_f(#000, 0.5);
 	}
 }
-
-
-
 /*
 |----------------------------------------------------------------------------
 | 13. CONTACT US
 |----------------------------------------------------------------------------
 */
-
-.img-contacts{
+.img-contacts {
 	max-width: 100%;
-  height: 150px;
+	height: 150px;
 }
-
 .contact-us {
 	padding-bottom: 70px;
 }
-
-.address {
+.contacts-socials {
 	p {
-		padding-left: 30px;
-		position: relative;
-		font-size: 1rem;
-    margin-bottom: 1.8rem;
-
+		margin-bottom: 1.8rem;
 		& > svg {
 			height: 18px;
-	    width: 18px;
-	    position: absolute;
-	    left: 0;
-	    top: 4px;
-	    fill: currentColor;
+			width: 18px;
+			margin-right: 5px;
+			fill: currentColor;
 		}
 	}
 }
-
 .social-media {
 	list-style: none;
 	padding: 0;
-
 	li {
 		display: inline-block;
-
 		+ li {
 			margin-left: 10px;
 		}
-
-		[class^="icon-"],
-		[class*="icon-"] {
+		[class*="icon-"],
+		[class^="icon-"] {
 			padding: 5px;
 			@include radius(7px);
 			width: 30px;
 			height: 30px;
 			fill: currentColor;
 		}
-
 		a {
 			color: currentColor;
-
-			&:hover,
-			&:focus {
-				[class^="icon-"],
-				[class*="icon-"] {
+			&:focus,
+			&:hover {
+				[class*="icon-"],
+				[class^="icon-"] {
 					fill: #fff;
 				}
-
 				.icon-facebook {
 					background: #002E62;
 				}
-
 				.icon-twitter {
 					background: #54ABEE;
 				}
-
 				.icon-google-plus {
 					background: #D34836;
 				}
-
 				.icon-dribbble {
 					background: #EC4A89;
 				}
@@ -130,33 +101,31 @@
 		}
 	}
 }
-
 .quick-contact {
 	.form-control {
 		background-color: #fff;
 		box-shadow: inset 0 0 0;
 	}
-
 	.btn {
 		@include radius(4px);
 	}
 }
-
 .footer {
 	padding: 30px 0;
-
 	img.logo {
-		height: 25px;
-    margin: 0 10px 3px;
+		width: 5rem;
+		height: auto;
+		margin: 35px 5px 0;
+		@media (max-width: 768px) {
+			width: 5rem;
+		}
 	}
-
 	p {
 		margin-bottom: 0;
 		font-weight: 600;
-
+		line-height: 2.3;
 		a {
 			color: $body-text;
-
 			&:hover {
 				color: $base-color;
 			}

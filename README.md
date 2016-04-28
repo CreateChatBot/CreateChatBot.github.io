@@ -1,5 +1,9 @@
-gulp-frontend-boilerplate
+Create Chatbot
 =========================
+
+> Deliver pure business automation.
+
+gulp-frontend-boilerplate
 
 > An ES6 boilerplate with common frontend tasks using Gulp 4 as build system.
 
@@ -24,6 +28,7 @@ Gulp ([Getting started](https://github.com/gulpjs/gulp/blob/master/docs/getting-
 
 ```bash
 npm install -g gulpjs/gulp-cli#4.0
+npm install uglify-js -g
 ```
 
 ### Clone this repository
