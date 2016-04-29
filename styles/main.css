@@ -5803,12 +5803,9 @@ svg.icon {
 .footer {
   padding: 30px 0; }
   .footer img.logo {
-    width: 7rem;
-    height: auto;
-    margin: 35px 5px 0; }
-    @media (max-width: 768px) {
-      .footer img.logo {
-        width: 5rem; } }
+    width: 128px;
+    height: 128px;
+  }
   .footer p {
     margin-bottom: 0;
     font-weight: 600; }
@@ -6002,7 +5999,7 @@ svg.icon {
 
 /*
 |----------------------------------------------------------------------------
-| 10. PRICING TABLE 
+| 10. PRICING TABLE
 |----------------------------------------------------------------------------
 */
 .pricing-table {
