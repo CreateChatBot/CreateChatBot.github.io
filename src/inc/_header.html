@@ -2,19 +2,18 @@
      NAVBAR - FIXED TOP
 ============================== -->
 <header>
-	<div class="container">
-
-		<nav class="navbar navbar-top navbar-fixed-top navbar-light bg-faded">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-md navbar-top navbar-fixed-top navbar-light bg-faded">
+			<!-- Toggle Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
 			<a class="navbar-brand" href="/#">
 				<img src="images/logo.png" alt="Create Chatbot" class="logo"> Create Chatbot
 			</a>
-			<!-- Toggle Button -->
-			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-navigation">
-				☰
-			</button>
 			<!-- Nav Content -->
-			<div class="collapse navbar-toggleable-xs" id="main-navigation">
-				<ul class="nav navbar-nav">
+			<div class="collapse navbar-collapse" id="main-navigation">
+				<ul class="nav navbar-nav mr-auto mt-2 mt-md-0">
 					<li class="nav-item">
 						<a class="nav-link" href="/#">Home <span class="sr-only">(current)</span></a>
 					</li>
@@ -27,6 +26,5 @@
 				</ul>
 			</div>
 		</nav>
-
 	</div>
 </header>

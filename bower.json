@@ -1,22 +1,20 @@
 {
-  "name": "Create Chatbot",
-  "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
-  "main": "",
-  "authors": [
-    "Sergey Alekseev"
-  ],
-  "license": "MIT",
-  "homepage": "http://createchatbot.com",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^4.0.x",
-    "jquery": "^2.2.3",
-    "jquery.localScroll": "^1.4.0"
-  }
+    "name": "Create Chatbot",
+    "description": "Grow Your Business by Building Deeper Interactions With Your Customers.",
+    "main": "",
+    "authors": [
+        "Sergey Alekseev"
+    ],
+    "license": "MIT",
+    "homepage": "http://createchatbot.com",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery.localScroll": "^1.4.0"
+    }
 }

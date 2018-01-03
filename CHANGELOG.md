@@ -1,5 +1,34 @@
 ### Change log
 
+1.6.0
+
+* Set NODE_ENV in npm scripts
+* Roll back to external .stylelintrc + Update
+
+1.5.3
+
+* Add aliasify and brfs by default
+
+1.5.2
+
+* Add
+
+1.5.1
+
+* Fix browsersync inject css
+
+1.5.0
+
+* Add reload to server task
+* Add delete file in dist on watch delete in src
+* Use npm run for uniformity
+* Optimize bundling time
+
+1.4.0
+
+* Conform boilerplate to ESLint
+* Add uglifyjs as dev dependency
+
 1.3.1
 
 * Add Angular and Aurelia setup

@@ -1,20 +1,25 @@
-import gulp from 'gulp';
-
 import browserSync from 'browser-sync';
+
 import config from '../config';
 
-export function serve(done) {
+export const server = browserSync.create();
 
+export function reload(done) {
+  server.reload();
+  done();
+}
+
+export function serve(done) {
   const logLevel = config.verbose ? 'debug' : 'info';
 
-  browserSync.init({
+  server.init({
     server: {
       baseDir: config.dist,
-      index: "index.html"
+      directory: true
     },
     port: config.port,
     logConnections: true,
-    logLevel: logLevel
+    logLevel
   }, done);
 }
 

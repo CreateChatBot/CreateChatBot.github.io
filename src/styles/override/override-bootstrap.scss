@@ -1,7 +1,6 @@
 .media-left, .media-right, .media-body {
-  display: table-cell;
-  vertical-align: middle;
-  max-height: 100%;
+  align-self: center;
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -11,6 +10,9 @@
   }
 }
 
-.collapsing {
-  // transition-duration: .1s;
+.collapse {
+  display: none;
+  &.in, &.show {
+    display: inline-block;
+  }
 }

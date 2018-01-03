@@ -4,6 +4,7 @@ Create Chatbot
 > Deliver pure business automation.
 
 gulp-frontend-boilerplate
+=========================
 
 > An ES6 boilerplate with common frontend tasks using Gulp 4 as build system.
 
@@ -27,8 +28,7 @@ brew install node
 Gulp ([Getting started](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started))
 
 ```bash
-npm install -g gulpjs/gulp-cli#4.0
-npm install uglify-js -g
+npm install -g gulpjs/gulp-cli && npm rebuild node-sass --force && npm install uglify-js -g
 ```
 
 ### Clone this repository
@@ -45,15 +45,15 @@ git clone --depth 1 https://github.com/dmnsgn/gulp-frontend-boilerplate.git && c
 git clone --depth 1 https://github.com/dmnsgn/gulp-frontend-boilerplate.git && cd gulp-frontend-boilerplate && rd /s /q .git
 ```
 
-### Init (once)
+### Start a new project
 
-This step sets up the boilerplate to fit your needs (App Name, JS compiler/transpiler, JS framework, CSS preprocessor).
+This step sets up the boilerplate to fit your needs (App Name, JS compiler/transpiler, JS framework, CSS preprocessor). It should only be ran once. 
 
 ```bash
 npm run init
 ```
 
-### Install
+### Install an existing project
 
 Then each time you clone the repo, use:
 
@@ -94,7 +94,7 @@ Others keys:
 This is the default task.
 
 ```bash
-gulp
+npm run dev
 ```
 All the magic begins here:
 
@@ -108,7 +108,7 @@ All the magic begins here:
 Same as running `gulp --env dev`.
 
 ---
-Note: if you just want to build the project and serve it, run `gulp --env prod` then `gulp serve`.
+Note: if you just want to build the project and serve it, run `npm run prod` then `gulp serve`.
 
 
 #### Make changes
@@ -124,7 +124,7 @@ Note: if you just want to build the project and serve it, run `gulp --env prod` 
 When you are happy with your changes, run:
 
 ```bash
-gulp --env prod
+rm -rf dist/* && npm run prod
 ```
 
 * Replace build tags with `.min` files, generates these minified files in `dist` folder (with optimization tasks)

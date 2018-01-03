@@ -1,4 +1,4 @@
-// import "html5shiv.js";
+// import SVGInjector from '../../bower_components/svg-injector-2/svg-injector.js';
 
 $(document).ready(function() {
 "use strict";
@@ -56,10 +56,10 @@ if ( matchMedia( 'only screen and (min-width: 768px)' ).matches ) {
 
 
 /******************** NAVBAR COLLAPSE ON CLICK ********************/
-$('.navbar-nav').on('click', 'a', function(event) {
-   /* Act on the event */
-   $('.navbar-collapse').collapse('hide');
-});
+// $('.navbar-nav').on('click', 'a', function(event) {
+//     Act on the event 
+//    $('.navbar-collapse').collapse('hide');
+// });
 
 
 
@@ -166,10 +166,12 @@ $('.navbar-nav').on('click', 'a', function(event) {
 /******************** SVG INJECTION ********************/
 
 
-// Elements to inject
+// Replaces all existing SVG images on the DOM with inline SVGs: 
+
+
  var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
- // Do the injection
- SVGInjector(mySVGsToInject);
+  // Do the injection
+  SVGInjector(mySVGsToInject);
 
 });

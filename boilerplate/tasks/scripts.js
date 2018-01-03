@@ -5,13 +5,13 @@ import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
 import browserify from 'browserify';
 import watchify from 'watchify';
-import browserSync from 'browser-sync';
 
 import gutil from 'gulp-util';
 import uglify from 'gulp-uglify';
 import header from 'gulp-header';
 import rename from 'gulp-rename';
 
+import { reload } from './serve';
 import config, { getConfig } from '../config';
 import bundleLogger from '../utils/bundleLogger';
 import handleErrors from '../utils/handleErrors';
@@ -22,12 +22,16 @@ const envDev = config.args.env === 'dev';
 const b = browserify({
   entries: [`${config.src}/scripts/main.${config.extensions.scripts}`],
   extensions: [config.extensions.scripts],
-  debug: envDev
+  // extensions: ['.js'],
+  debug: envDev,
+  cache: {},
+  packageCache: {},
+  fullPaths: envDev
 });
 
 const bundler = envDev ? watchify(b) : b;
 
-const bundle = function(done) {
+const bundle = (done) => {
   bundleLogger.start();
 
   return bundler
@@ -41,9 +45,9 @@ const bundle = function(done) {
     .pipe(envDev ? gutil.noop() : rename({
       suffix: '.min'
     }))
-    .on('end', function() {
+    .on('end', () => {
       if (envDev) {
-        browserSync.reload();
+        reload(() => {});
       } else {
         done();
       }
@@ -57,14 +61,12 @@ if (envDev) {
 }
 
 export function bundleApp(done) {
-
   if (envDev) {
     bundle();
     done();
   } else {
     bundle(done);
   }
-
 }
 
 export function bundleVendor(done) {
@@ -74,15 +76,19 @@ export function bundleVendor(done) {
     src: updatedConfig.vendors,
     dest: `${updatedConfig.dist}/scripts`,
     fileName: 'vendor.js'
-  }, function() {
+  }, () => {
     if (!envDev) {
-      const cmd = `uglifyjs ${updatedConfig.dist}/scripts/vendor.js -o ${updatedConfig.dist}/scripts/vendor.min.js`;
-      exec(cmd, function(error, stdout, stderr) {
-        done();
+      const cmd = `./node_modules/.bin/uglifyjs ${updatedConfig.dist}/scripts/vendor.js \
+        -o ${updatedConfig.dist}/scripts/vendor.min.js`;
+      exec(cmd, (error) => {
+        if (error !== null) {
+          console.log(`exec error: ${error}`);
+        } else {
+          done();
+        }
       });
     } else {
       done();
     }
   });
-
 }
